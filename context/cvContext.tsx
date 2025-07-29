@@ -51,6 +51,6 @@ export const CVProvider = ({ children }: { children: ReactNode }) => {
 
 export const useCV = () => {
   const context = useContext(CVContext);
-  if (!context) return [];
+  if (!context) throw new Error("useTheme must be used within a ThemeProvider");
   return context;
 };

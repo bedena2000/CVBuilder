@@ -1,6 +1,7 @@
-const cvFormLabels = {
+export const cvFormLabels = {
   eng: {
     personalInfo: {
+      sectionTitle: "Personal info",
       name: "Full Name",
       title: "Job Title",
       phone: "Phone Number",
@@ -10,7 +11,9 @@ const cvFormLabels = {
       github: "GitHub / Portfolio",
     },
 
-    summary: "Professional Summary",
+    summary: {
+      sectionTitle: "Professional Summary",
+    },
 
     skills: {
       sectionTitle: "Skills",
@@ -68,6 +71,7 @@ const cvFormLabels = {
 
   geo: {
     personalInfo: {
+      sectionTitle: "პერსონალური ინფორმაცია",
       name: "სრული სახელი",
       title: "სამუშაო პოზიცია",
       phone: "ტელეფონის ნომერი",
@@ -77,7 +81,9 @@ const cvFormLabels = {
       github: "GitHub / პორტფოლიო",
     },
 
-    summary: "პროფესიული აღწერა",
+    summary: {
+      sectionTitle: "პროფესიული აღწერა",
+    },
 
     skills: {
       sectionTitle: "უნარები",

@@ -1,5 +1,8 @@
 // CV
 
+import { LucideIcon } from "lucide-react";
+import { ComponentType, SVGProps } from "react";
+
 export interface CVSection {
   personalInfo: { [key: string]: string };
   summary: string;
@@ -48,11 +51,21 @@ export interface CVData {
 // Theme
 
 export interface ThemeData {
-  currentTheme: string;
+  currentTheme: "dark" | "light";
 }
 
 // Languages
 
 export interface LanguagesData {
   currentLanguage: "eng" | "geo";
+}
+
+// Menu
+
+
+export interface MenuItem {
+  id: number;
+  title: string;
+  path: string;
+  icon: LucideIcon;
 }

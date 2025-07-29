@@ -35,6 +35,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
-  if (!context) return [];
+  if (!context) throw new Error("useTheme must be used within a ThemeProvider");
   return context;
 };
